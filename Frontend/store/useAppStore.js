@@ -46,7 +46,9 @@ const useAppStore = create((set,get)=>({
     signin:async(formdata)=>{
         try {
             set({loading:true})
+            console.log(formdata,"frontend");
             const res = await axiosinstance.post('/auth/signin',formdata)
+
             set({authUser:res.data,isLoggedIn:true,showsignin:false})
             toast.success("Successfully Signed In")
         } catch (error) {
