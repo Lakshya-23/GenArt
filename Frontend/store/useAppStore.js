@@ -46,7 +46,6 @@ const useAppStore = create((set,get)=>({
     signin:async(formdata)=>{
         try {
             set({loading:true})
-            console.log(formdata,"frontend");
             const res = await axiosinstance.post('/auth/signin',formdata)
 
             set({authUser:res.data,isLoggedIn:true,showsignin:false})
@@ -86,10 +85,8 @@ const useAppStore = create((set,get)=>({
         const {authUser} = get();
         try {
             set({isImageLoading:true})
-            console.log(prompt);
             const modelId = models.find((item) => item.id === model)?.Model_ID;
             if(authUser.creditBalance <= 0) return toast.error("Insufficient Credits")
-            console.log(authUser);
             const res = await axiosinstance.post('/image/generate-image',{prompt,modelId})          //always send object to backend
 
             set({imageurl:res.data.resultimage , authUser:{...authUser,creditBalance:res.data.creditBalance},isImageloaded:true})

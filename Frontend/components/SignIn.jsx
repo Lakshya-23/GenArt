@@ -24,7 +24,6 @@ function SignIn() {
     const { email, password } = data;
 
     if (!email) return toast.error("Email is required");
-    console.log(email);
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) return toast.error("Incorrect email format");
   

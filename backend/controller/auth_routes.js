@@ -47,7 +47,7 @@ async function signin(req,res){
         
         if(!email||!password) return res.status(400).json({mssg:"All fields are required"})
         else if(password.length<6) return res.status(400).json({mssg:"Invalid Password Length"})
-        console.log(email,password,"bakcend");
+        
         const user  = await User.findOne({email})
         if(!user) return res.status(400).json({mssg:"User doesn't exist"})
 

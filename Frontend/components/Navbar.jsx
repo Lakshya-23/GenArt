@@ -10,7 +10,6 @@ function Navbar() {
   const setshowsignin = useAppStore((state) => state.setshowsignin);
   const logout = useAppStore((state) => state.logout);
 
-  console.log(authUser);
   return (
     <nav className="flex pt-4 justify-between ">
       <Link to={"/"}>

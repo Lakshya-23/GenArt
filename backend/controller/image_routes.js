@@ -11,9 +11,9 @@ async function generateImage(req,res){
         const {prompt,modelId} = req.body
         const user = await User.findById(_id).select("-password");
         if(!user||!prompt) return res.status(400).json({mssg:"User or prompt not found"})
-        console.log(modelId);
+        
         if(user.creditBalance <= 0 ) return res.status(400).json({mssg:"No credits left"})
-        console.log(modelId);
+     
         const apiKey = process.env.ImgGen_Key;
         const apiUrl = process.env.ImgGen_URL;
 
@@ -43,10 +43,7 @@ async function generateImage(req,res){
             },
             body: JSON.stringify(requestBody)
         });
-        // if (!response.ok) {
-        //     console.log("error in api response");
-        //     return res.status(500).json({mssg:"Internal server error in generateImage-api response"})
-        // }
+      
         const result = await response.json();
         const base64image = result?.data?.[0]?.b64_json
         if(!base64image) return res.status(500).json({mssg:"Internal server error Image not generated"})
