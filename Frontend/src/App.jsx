@@ -10,7 +10,7 @@ import SignIn from "../components/SignIn";
 import useAppStore from "../store/useAppStore";
 import { Toaster } from 'react-hot-toast';
 import { useEffect } from "react";
-import Loader from "../components/loader";
+import Loader from "../components/Loader"
 
 
 

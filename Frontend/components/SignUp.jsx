@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import useAppStore from "../store/useAppStore";
 import {toast} from 'react-hot-toast'
 import { motion } from "motion/react";
-import Loader from "./loader";
+import Loader from "./Loader";
 
 function SignUp() {
   const [showPass, setshowPass] = useState(false);
