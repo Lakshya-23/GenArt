@@ -79,7 +79,7 @@ function GenerateImgPage() {
             />
             <button
               type="submit"
-              className="bg-black/75 px-10 py-3 sm:px-16 rounded-full cursor-pointer"
+              className={`px-10 bg-black/75 py-3 sm:px-16 rounded-full cursor-pointer disabled:opacity-65`}
               disabled={isDisabled}
             >
               Generate
