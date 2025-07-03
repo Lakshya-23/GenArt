@@ -14,6 +14,7 @@ const useAppStore = create((set,get)=>({
     signInState:false,
     showsignin:false,
     imageurl:null,
+    isDisabled:false,
     model:"FLUX.1.1-pro-ultra",
 
     setshowsignin: (value) => set({showsignin:value}),
@@ -84,7 +85,7 @@ const useAppStore = create((set,get)=>({
     generateimage:async(prompt,model)=>{
         const {authUser} = get();
         try {
-            set({isImageLoading:true})
+            set({isImageLoading:true,isDisabled:true})
             const modelId = models.find((item) => item.id === model)?.Model_ID;
             if(authUser.creditBalance <= 0) return toast.error("Insufficient Credits")
             const res = await axiosinstance.post('/image/generate-image',{prompt,modelId})          //always send object to backend
@@ -96,7 +97,7 @@ const useAppStore = create((set,get)=>({
             toast.error(error.response?.data?.mssg)
             set({isImageloaded:false})
         }finally{
-            set({isImageLoading:false})
+            set({isImageLoading:false,isDisabled:false})
         }
     }
 

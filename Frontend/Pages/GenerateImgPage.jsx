@@ -16,7 +16,8 @@ function GenerateImgPage() {
     setisImageloaded,
     imageurl,
     model,
-    setmodel
+    setmodel,
+    isDisabled
   } = useAppStore(
     useShallow((state) => ({
       isImageLoading: state.isImageLoading,
@@ -27,6 +28,7 @@ function GenerateImgPage() {
       imageurl: state.imageurl,
       model: state.model,
       setmodel: state.setmodel,
+      isDisabled: state.isDisabled,
     }))
   );
 
@@ -78,6 +80,7 @@ function GenerateImgPage() {
             <button
               type="submit"
               className="bg-black/75 px-10 py-3 sm:px-16 rounded-full cursor-pointer"
+              disabled={isDisabled}
             >
               Generate
             </button>
