@@ -54,18 +54,18 @@ export const plans = [
 
 export const models = [
     {
-      "id": "gpt-image-1",
-      "title": "gpt-image-1",
-      "description": "Next-gen multimodal image model by OpenAI, excels at photorealism, illustration, inpainting & more.",
+      "id": "imagen-4",
+      "title": "Google-imagen-4",
+      "description": "The next evolution of Google's Imagen series, offering enhanced photorealism, prompt adherence, and aesthetic quality.",
       "avg_time": "20s - 40s",
-      "Model_ID": "provider-5/gpt-image-1"
+      "Model_ID": "provider-4/imagen-4"
     },
     {
-      "id": "dall-e-3",
-      "title": "dall-e-3",
-      "description": "OpenAI's detailed and accurate text-to-image model, ideal for conceptual clarity and prompt alignment; creates cohesive, nuanced visuals.",
+      "id": "imagen-3",
+      "title": "Google-imagen-3",
+      "description": "Google's Imagen 3 model, known for high-fidelity text-to-image generation and deep language understanding.",
       "avg_time": "5s - 15s",
-      "Model_ID": "provider-5/dall-e-3"
+      "Model_ID": "provider-4/imagen-3"
     },
     {
       "id": "FLUX.1-schnell",
@@ -95,20 +95,20 @@ export const models = [
       "avg_time": "2s - 10s",
       "Model_ID": "provider-1/FLUX.1-kontext-pro"
     },
-    {
-      "id": "FLUX.1.1-pro-ultra-raw",
-      "title": "FLUX.1.1-pro-ultra-raw",
-      "description": "Ultra-raw mode designed for hyper-realistic candid-style photography with natural lighting, skin tones and textures.",
-      "avg_time": "5s - 15s",
-      "Model_ID": "provider-3/FLUX.1.1-pro-ultra-raw"
-    },
-    {
-      "id": "FLUX.1.1-pro-ultra",
-      "title": "FLUX.1.1-pro-ultra",
-      "description": "Ultra mode for ultra-high-resolution (up to 4 MP) photorealism with speed comparable to standard pro versions.",
-      "avg_time": "5s - 15s",
-      "Model_ID": "provider-3/FLUX.1.1-pro-ultra"
-    },
+    // {
+    //   "id": "FLUX.1.1-pro-ultra-raw",
+    //   "title": "FLUX.1.1-pro-ultra-raw",
+    //   "description": "Ultra-raw mode designed for hyper-realistic candid-style photography with natural lighting, skin tones and textures.",
+    //   "avg_time": "5s - 15s",
+    //   "Model_ID": "provider-3/FLUX.1.1-pro-ultra-raw"
+    // },
+    // {
+    //   "id": "FLUX.1.1-pro-ultra",
+    //   "title": "FLUX.1.1-pro-ultra",
+    //   "description": "Ultra mode for ultra-high-resolution (up to 4 MP) photorealism with speed comparable to standard pro versions.",
+    //   "avg_time": "5s - 15s",
+    //   "Model_ID": "provider-3/FLUX.1.1-pro-ultra"
+    // },
     {
       "id": "FLUX.1-schnell-v2",
       "title": "FLUX.1-schnell-v2",
@@ -117,26 +117,33 @@ export const models = [
       "Model_ID": "provider-2/FLUX.1-schnell-v2"
     },
     {
-      "id": "shuttle-3.1-aesthetic",
-      "title": "shuttle-3.1-aesthetic",
-      "description": "Advanced text-to-image model focused on detailed, aesthetic and visually-pleasing styles—great for creative visuals.",
-      "avg_time": "5s - 15s",
-      "Model_ID": "provider-3/shuttle-3.1-aesthetic"
+      "id": "sana-1.5-flash",
+      "title": "FLUX.1-schnell-v2",
+      "description": "A faster, cost-effective version of the Sana 1.5 model, optimized for real-time applications and rapid image generation.",
+      "avg_time": "2s - 10s",
+      "Model_ID": "provider-6/sana-1.5-flash"
     },
-    {
-      "id": "shuttle-3-diffusion",
-      "title": "shuttle-3-diffusion",
-      "description": "Balanced and versatile model generating detailed and diverse images in just 4 diffusion steps; good blend of speed and quality.",
-      "avg_time": "5s - 15s",
-      "Model_ID": "provider-3/shuttle-3-diffusion"
-    },
-    {
-      "id": "shuttle-jaguar",
-      "title": "shuttle-jaguar",
-      "description": "Designed for cinematic, aesthetic and highly realistic imagery—ideal for professional-level visual storytelling.",
-      "avg_time": "5s - 15s",
-      "Model_ID": "provider-3/shuttle-jaguar"
-    }
+    // {
+    //   "id": "shuttle-3.1-aesthetic",
+    //   "title": "shuttle-3.1-aesthetic",
+    //   "description": "Advanced text-to-image model focused on detailed, aesthetic and visually-pleasing styles—great for creative visuals.",
+    //   "avg_time": "5s - 15s",
+    //   "Model_ID": "provider-3/shuttle-3.1-aesthetic"
+    // },
+    // {
+    //   "id": "shuttle-3-diffusion",
+    //   "title": "shuttle-3-diffusion",
+    //   "description": "Balanced and versatile model generating detailed and diverse images in just 4 diffusion steps; good blend of speed and quality.",
+    //   "avg_time": "5s - 15s",
+    //   "Model_ID": "provider-3/shuttle-3-diffusion"
+    // },
+    // {
+    //   "id": "shuttle-jaguar",
+    //   "title": "shuttle-jaguar",
+    //   "description": "Designed for cinematic, aesthetic and highly realistic imagery—ideal for professional-level visual storytelling.",
+    //   "avg_time": "5s - 15s",
+    //   "Model_ID": "provider-3/shuttle-jaguar"
+    // }
 
   
 ]

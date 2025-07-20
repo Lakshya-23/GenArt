@@ -15,7 +15,7 @@ const useAppStore = create((set,get)=>({
     showsignin:false,
     imageurl:null,
     isDisabled:false,
-    model:"FLUX.1.1-pro-ultra",
+    model:"FLUX.1.1-pro",
 
     setshowsignin: (value) => set({showsignin:value}),
     setmodel:(modeldata)=>set({model:modeldata}),

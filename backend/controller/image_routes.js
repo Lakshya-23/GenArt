@@ -23,7 +23,7 @@ async function generateImage(req,res){
         }
         
         const requestBody = {
-            model: `${modelId || "provider-3/FLUX.1.1-pro-ultra"}`,
+            model: `${modelId || "provider-1/FLUX.1.1-pro"}`,
             prompt: `${prompt}`,
             n: 1,
             size: "1024x1024",
