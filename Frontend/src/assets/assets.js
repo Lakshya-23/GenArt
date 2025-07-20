@@ -118,7 +118,7 @@ export const models = [
     },
     {
       "id": "sana-1.5-flash",
-      "title": "FLUX.1-schnell-v2",
+      "title": "sana-1.5-flash",
       "description": "A faster, cost-effective version of the Sana 1.5 model, optimized for real-time applications and rapid image generation.",
       "avg_time": "2s - 10s",
       "Model_ID": "provider-6/sana-1.5-flash"
